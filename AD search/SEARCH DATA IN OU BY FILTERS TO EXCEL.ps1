@@ -1,0 +1,1 @@
+Get-ADUser -Filter * -SearchBase "OU=xxxxx,DC=xxxxx,DC=xxxxxx" -Properties * | Select-Object name, surname, Mail, TelephoneNumber, distinguishedName   | export-csv -path c:\userexport.csv
